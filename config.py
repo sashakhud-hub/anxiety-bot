@@ -10,5 +10,5 @@ CHANNEL_USERNAME = "@panichkaa"
 DATABASE_URL = os.getenv("DATABASE_URL", "anxiety_bot.db")
 
 # Настройки для деплоя
-PORT = int(os.getenv("PORT", 8443))
+PORT = int(os.getenv("PORT", 10000))  # Railway использует порт 10000
 WEBHOOK_URL = os.getenv("WEBHOOK_URL", None)
