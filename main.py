@@ -2,10 +2,7 @@ import logging
 import sqlite3
 from datetime import datetime
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
-from config import BOT_TOKEN, CHANNEL_USERNAME
-from messages import *
-from database import init_db, save_user_answer, get_user_results, save_user_result
+from telegram.ext import Updater, CommandHandler, CallbackQueryHandler, CallbackContext
 
 # Настройка логирования
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
